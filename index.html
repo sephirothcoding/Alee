@@ -60,7 +60,7 @@
       display: block;
       margin: 0 auto;
       text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
-      background: linear-gradient(90deg, white, black);
+      background: linear-gradient(90deg, white 0%, black 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -68,15 +68,17 @@
       -webkit-transform: translate3d(0, 0, 0);
       -webkit-backface-visibility: hidden;
     }
-    p .subtitle {
-      font: 400 1.5em "Oswald", sans-serif;
-      letter-spacing: 0;
-      padding-top: 1em;
-      display: block;
-      background: linear-gradient(to right, white, black);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+    .id-line {
+      font-size: 1.5em;
+      margin-top: 0.5em;
+      color: white;
+      letter-spacing: 0.1em;
+    }
+    .quote-line {
+      font-size: 1em;
+      color: white;
+      margin-top: 0.5em;
+      letter-spacing: normal;
     }
     @-webkit-keyframes aitf {
       0% { background-position: 0% 50%; }
@@ -92,16 +94,16 @@
 
   <div id="jsi-butterfly-container" class="container"></div>
 
-  <p> Alee(RaRa)
-    <span class="shiny-gold">Alee(RaRa)</span>
-    &mdash; 1389102257 &mdash;
-    <span class="subtitle">Dime y lo olvido, Enséñame y lo recuerdo, involúcrame y lo aprendo</span>
+  <p> Alee(RaRa(
+    <span class="shiny-gold">Alee(RaRa(</span>
+    <div class="id-line">1389102257</div>
+    <div class="quote-line">Dime y lo olvido, Enséñame y lo recuerdo, involúcrame y lo aprendo</div>
   </p>
 
   <iframe width="1" height="1" src="https://www.youtube.com/embed/WFqAEL07Q_Y?autoplay=1&loop=1&playlist=WFqAEL07Q_Y"
   frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <!-- The script section remains unchanged (omitted here for brevity, keep it from your original code) -->
+  <!-- The rest of the original JS continues unchanged below -->
 </body>
 </html>
